@@ -1,0 +1,98 @@
+##################################################
+########## MedievalAgeEconomy by Panda ###########
+##################################################
+
+#
+# Permisja dla Administratora: "economy.admin"
+#
+
+
+#polaczenie z baza danych MySQL jest konieczne do dzialania pluginu
+
+# dane do laczenia sie z baza danych
+MySQL:
+# adres bazy danych, zazwyczaj localhost
+    Host: localhost
+# uzytkownik - nick 
+    User: Panda
+# haslo 
+    Password: PandySomFajne
+# nazwa bazy danych
+    Database: serwer
+# zazwyczaj 3306
+    Port: 3306
+
+#prefix pluginu
+prefix: kolor5Economy
+
+#czas miedzy wpisywanymi komendami //spam komendami // w sekundach
+timecd: 4
+
+#nazwy 3 walut
+waluta1: kolor4Funt
+waluta2: kolor4Frank
+waluta3: kolor4Euro
+
+#poczatkowa ilosc kasy dla gracza
+waluta1start: 20
+waluta2start: 10
+waluta3start: 30
+
+#maxymalna ilosc dodawanych ofert w sklepie
+maxoffers: 2
+
+#zakazane przedmioty do dawania ich do ofert w sklepie
+prohibiteditems:
+  - DIRT
+  - COBBLESTONE
+
+#wiadomosci tekstowe
+
+
+#cooldown w wysylaniu komend
+cdcommands: kolor4BLAD kolor8Musisz odczekac chwile zanim wyslesz kolejna komende.
+#wyswietlana pomoc
+sakiewka: kolor4/sakiewka  kolor8stan konta.
+sakiewkapay: kolor4/sakiewka zaplac <ile> <waluta> <gracz> kolor8przelewa pieniadze podanemu graczowi.
+sakiewkatransfer: kolor4/sakiewka przelew <ile> <waluta> <gracz>  kolor8przelewa pieniadze podenamu graczowi //alias.
+#dla adminow
+sakiewkaplayer: kolor4/sakiewka <gracz> kolor8stan konta gracza.
+sakiewkaremove: kolor4/sakiewka odejmij <ile> <waluta> <gracz>  kolor8zabranie pieniedzy graczowi.
+sakiewkagive: kolor4/sakiewka dodaj <ile> <waluta> <gracz>  kolor8dodawanie pieniedzy graczowi.
+
+#komenda tylko dla gracza
+onlyplayercan: kolor4BLAD kolor8Musisz byc graczem zeby wykonac ta komende.
+#zle wpisanie komendy
+wronguse: kolor4SPROBUJ
+#zle wpisany numer
+wrongnumber: kolor4BLAD kolor8Zle wpisana ilosc.
+#zle wpisana waluta
+wrongwaluta: kolor4BLAD kolor8Waluta nie istenieje. Dostepne waluty kolor4Funt, Frank, Eurokolor8.
+#zle wpisany numer
+wrongplayer: kolor4BLAD kolor8Podany gracz nie istnieje.
+#zbyt malo na koncie
+wrongamount: kolor4BLAD kolor8Masz za malo pieniedzy.
+#brak permisji
+nopermission: kolor4BLAD kolor8Nie posiadasz do tego uprawnien.
+
+#poprawny przelew
+sendtransfer: kolor2Pieniadze zostaly przelane.
+#otrzymany przelew
+gettransfer: kolor2Otrzymales przelew.
+
+#komendy do pomocy przy ofertach
+ofertalist: kolor4/oferta lista kolor8wyswietla ilosc twoich ofert
+ofertadelete: kolor4/oferta usun <id_oferty> kolor8usuwa oferte o podanym id
+ofertacreate: kolor4/oferta stworz <cena_za_sztuke> <waluta> kolor8tworzy oferte w sklepie z przedmiotem ktory trzymasz w rece
+
+#usunieto twoj przedmiot ze sklepu
+ofertaremoved: kolor2Twoja oferta zostala usunieta ze sklepu!
+#przy usuwaniu oferta nie istenieje
+ofertaremoveerror: kolor4BLAD kolor8oferta o podnym id nie istnieje lub nie nalezy do Ciebie.
+#tworzenie oferty w reku musisz miec przedmiot
+ofertacreateerror: kolor4BLAD kolor8tworzac oferte w reku musisz miec przedmiot ktory chcesz dodac do oferty.
+#zabroniony itemek to dodania do sklepu
+prihibiteditem: kolor4BLAD kolor8nie mozesz dodac tego przedmiotu!
+ofertacreatesuccess: kolor2Oferta poprawnie stworzona
+#limit ofert do dodawania
+ofertalimit: kolor4BLAD kolor8przekroczyles limit ofert w sklepie!

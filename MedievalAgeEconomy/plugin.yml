@@ -1,0 +1,13 @@
+name: MedievalAgeEconomy
+main: me.panda.economy.main
+author: Panda
+version: 2.0
+commands:
+    sakiewka:
+        description: Komendy kont graczy
+    sklep:
+        description: Komend pokazujaca sklep
+    oferta:
+        description: Komendy do zarzadzania ofertami
+    economy:
+        description: Ogolna komenda ekonomii
