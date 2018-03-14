@@ -1,0 +1,145 @@
+######################################
+########## Willage by Panda ###########
+######################################
+
+#
+# Permisja dla Administratora: "willage.admin"
+#
+
+
+#polaczenie z baza danych MySQL jest konieczne do dzialania pluginu
+
+# dane do laczenia sie z baza danych
+MySQL:
+# adres bazy danych, zazwyczaj localhost
+    Host: localhost
+# uzytkownik - nick 
+    User: mc
+# haslo 
+    Password: pandysomfajne
+# nazwa bazy danych np. willage
+    Database: willage
+# zazwyczaj 3306
+    Port: 3306
+
+#scoreboard - kolorowe nicki. moze obciazac przy wiekszej ilosci graczy
+scoreboard: true
+
+#cooldown w wysylaniu komend, sekundach
+cdcommands: 1
+
+#maksymalna dlugosc nazwy wioski
+maxname: 20
+
+#minimalna dlugosc nazwy wioski
+minname: 6
+
+#maksymalna dlugosc tagu wioski
+maxtag: 8
+
+#minimalna dlugosc tagu wioski
+mintag: 2
+
+#czas teleportacji do wioski w sekundach
+timetp: 10
+
+#minimalna odleglosc po miedzy wioskami przy zakladaniu
+mindistance: 100
+
+#poczatkowy podatek automatyczny w procentach
+taxStart: 2
+
+#maksymalny podatek
+maxtax: 20
+
+#===================================
+#Rangi wioskowe
+#ranga1 - ranga domyslna
+
+#Jak robic rangi:
+#
+#nazwa rangi w pexie musi byc taka sama jak
+#nazwa rangi tutaj. Wtedy w pexie dajesz sobie
+#do danej rangi poszczegolne permisje, ktore sa nizej wypisane
+#WAZNE jest to zeby nazwa rangi w polu name: <nazwa> byla taka sama
+#jak nazwa gr. w permissionsEX
+#
+#=====================
+#lista permisji:
+#willage.admin - permisja dla administratora serwera
+#
+# 1 - ranga domyslna
+1:
+    name: chlop
+2:
+    name: kowal
+3:
+    name: artysta
+4:
+    name: dyplomata
+5: 
+    name: zolnierz
+6:
+    name: zalozyciel
+
+
+#===============================
+#levele wiosek
+#radius - promien wioski
+#jako item moze byc tez waluta TYLKO MUSI BYC taka sama nazwa jak w plugu od economy
+lvl0:
+#lvl 0 jest nadawany wiosce nie zweryfikowanej
+    name: zadupie
+    radius: 15
+    cost:
+        1:
+            item: STONE
+            amount: 5
+        2:
+            item: Frank
+            amount: 2
+        3:
+            item: Euro
+            amount: 5
+lvl1:
+    name: wiocha
+    radius: 20
+lvl2:
+    name: superwiocha
+    radius: 30
+    cost:
+        1:
+            item: STONE
+            amount: 10
+        2:
+            item: Frank
+            amount: 5
+        3:
+            item: Euro
+            amount: 8
+lvl3:
+    name: miasteczko
+    radius: 40
+    cost:
+        1:
+            item: STONE
+            amount: 10
+        2:
+            item: Frank
+            amount: 5
+        3:
+            item: Euro
+            amount: 8
+lvl4:
+    name: stolica
+    radius: 50
+    cost:
+        1:
+            item: STONE
+            amount: 30
+        2:
+            item: Frank
+            amount: 5
+        3:
+            item: Euro
+            amount: 8

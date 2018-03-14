@@ -1,0 +1,8 @@
+name: MedievalAgeWillage
+main: me.panda.willage.main
+depend: [MedievalAgeEconomy, PermissionsEx]
+author: Panda or Dragonowosc or rafalolxD
+version: 2.0
+commands:
+    wioska:
+        description: Komendy wioski
